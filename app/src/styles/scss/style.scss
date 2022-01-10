@@ -1,2 +1,16 @@
 @import './nullify.scss';
 
+.container {}
+
+.wrapper {}
+
+  .content {}
+
+    .welcome {
+      &__row {}
+        &__body {}
+          &__title {}
+          &__list {}
+    
+        &__img {}
+    }
