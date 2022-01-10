@@ -11,6 +11,12 @@ body {
   margin: 0px auto;
 }
 
+.title {
+  color: #445161;
+  font-size: 2rem;
+}
+
+
 .wrapper {
   min-height: 100%;
 
@@ -27,13 +33,15 @@ body {
 
 
       background-color: rgb(68,81,98);
-      color: rgb(255, 255, 255);
 
       &__row {
         display: flex;
         justify-content: space-between;
       }
         &__body {
+          flex: 1 1 auto;
+
+
           color: rgb(255, 255, 255);
         }
           &__title {
@@ -43,7 +51,7 @@ body {
             font-size: 3.8rem;
           }
           &__list {
-            line-height: 17px;
+            line-height: 20px;
 
             li {
               margin: 0px 0px 10px 0px;
@@ -66,19 +74,30 @@ body {
     .what {
       padding: 50px 0;
 
+
+      background-color: rgb(255, 255, 255);
+
       &__row {
         display: flex;
         justify-content: space-between;
       }
+      &__img {
+        flex: 0 0 430px;
+
+        img {
+          max-width: 100%;
+        }
+      }
       &__body {
+        margin: 0px 0px 0px 25px;
+
+        flex: 1 1 auto;
+
+
         color: #445161;
       }
         &__title {
           margin: 0px 0px 31px 0;
-
-
-          font-size: 2rem;
-  
         }
         &__text {
           line-height: 27px;
@@ -87,4 +106,63 @@ body {
             margin: 0px 0px 30px 0;
           }
         }
+    }
+
+    .columns {
+      padding: 50px 0;
+
+
+      background-color: rgb(245,245,245);
+
+      &__title {
+        margin: 0px 0px 36px 0;
+
+
+        text-align: center;
+      }
+      &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin: 0px -8px;
+      }
+        &__column {
+          flex: 0 1 50%;
+
+          margin: 0px 0px 25px 0;
+          padding: 0px 8px;
+        }
+          &__item {}
+          .item {
+            display: flex;
+            align-content: stretch;
+
+
+            color: #333333;
+
+            &__img {
+              flex: 0 0 200px;
+
+              img {
+                max-width: 100%;
+              }
+            }
+            &__body {
+              float: 0 1 auto;
+
+              padding: 0px 0px 0px 15px;
+            }
+              &__title {
+                margin: 0px 0px 16px 0;
+
+
+                font-size: 1.4rem;
+              }
+              &__text {
+                font-size: 1.11rem;
+                line-height: 20px;
+              }
+          }
+
     }
