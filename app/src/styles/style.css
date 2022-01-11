@@ -177,9 +177,12 @@ body {
 .what__text p {
   margin: 0px 0px 30px 0;
 }
+.what__text p:last-child {
+  margin: 0;
+}
 
 .columns {
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
   background-color: whitesmoke;
 }
 .columns__title {
@@ -219,6 +222,74 @@ body {
 .columns .item__text {
   font-size: 1.11rem;
   line-height: 20px;
+}
+
+.vertical {
+  padding: 50px 0;
+  background-color: white;
+}
+.vertical__title {
+  margin: 0px 0px 31px 0;
+  text-align: center;
+}
+.vertical__row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0px -22.5px;
+}
+.vertical__column {
+  flex: 0 1 33.3333333333%;
+  display: flex;
+  padding: 0px 22.5px;
+}
+.vertical__item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 20px 0;
+  background-color: #445162;
+  text-align: center;
+  border: 3px solid #445162;
+  border-radius: 7px;
+}
+.vertical__subtitle {
+  margin: 0px 0px 14px 0;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  color: white;
+}
+.vertical__label {
+  padding: 16px 0;
+  margin: 0px 0px 14px 0;
+  font-size: 1.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #445162;
+  background-color: white;
+}
+.vertical__text {
+  flex: 1 1 auto;
+  margin: 0px 0px 15px 0;
+  padding: 0px 20px;
+  text-align: left;
+  line-height: 30px;
+  color: white;
+}
+.vertical__text p {
+  margin: 0px 0px 25px 0;
+}
+.vertical__text p:last-child {
+  margin: 0;
+}
+.vertical__btn {
+  display: block;
+  margin: 0px 20px;
+  padding: 13px 0;
+  color: #445162;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
