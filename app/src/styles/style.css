@@ -292,4 +292,18 @@ body {
   border-radius: 7px;
 }
 
+.footer {
+  background-color: whitesmoke;
+}
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  margin: 30px 0 24px 0;
+  color: #424a52;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
